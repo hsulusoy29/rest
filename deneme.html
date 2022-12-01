@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ülkeler</title>
+    <link rel="stylesheet" href="deneme.css">
+    <script src="deneme.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body >
+   <div class="icon1"> <a onclick="myFunction()"><i class="fa fa-moon-o"></i></a></div>
+    <div class="header">
+        <h3>Rest Countries</h3>
+        <br>
+       
+        <hr>
+        <br><br>
+    </div>
+    <h1 class="baslik">Get information about the Countries.</h1>
+    <br><br>
+    <div class="Search">
+        <ion-icon name="search-outline" class="icon"></ion-icon>
+        <input type="text"   class="input" placeholder="Search by Country Name Or Region." id="searchBar" >
+    </div>
+    
+    <p class="city"></p>
+        <div class="button">
+            <p>Filter by region</p>
+            <input type="button" value="All" class="button1">
+            <input type="button" value="Asia" class="button2">
+            <input type="button" value="Africa" class="button3">
+            <input type="button" value="America" class="button4">
+            <input type="button" value="Europe" class="button5">
+            <input type="button" value="Oceania" class="button6">
+            <input type="button" value="polar" class="button7">
+            <br>
+            <br>
+            <p>Found 123 countries</p>
+        </div>
+        <p class="city"></p>
+        
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
+<script>
+
+    let btn = document.querySelector(".icon1");
+    let icon = btn.querySelector(".fa-moon-o");
+    btn.onclick = function (){
+        if(icon.classList.contains("fa-moon-o")){
+            icon.classList.replace("fa-moon-o", "fa-sun-o");
+        }
+        else{
+            icon.classList.replace("fa-sun-o", "fa-moon-o");
+        }
+    }
+</script>
+</body>
+</html>
+
