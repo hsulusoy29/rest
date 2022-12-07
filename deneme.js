@@ -10,16 +10,15 @@
 }
 
 const displayResult=(result)=>{
-  console.log(result);
-  let x = 0;
   result.map(data =>{
-    console.log(data.name.common)
-    console.log(x++);
+    document.getElementById('city').innerHTML =(data.name.common);
+    document.getElementById('region').innerHTML =(data.region)
+    document.getElementById('population').innerHTML =(data.population);
+    document.getElementById('area').innerHTML =(data.area);
+    document.getElementById('image').src =(data.flags.png);
+    console.log(result);
     
   })
-  
-  
-  
   
 }
 document.addEventListener("keydown", (event) => {
@@ -28,3 +27,11 @@ document.addEventListener("keydown", (event) => {
     }
   })
  
+
+
+
+
+
+
+
+  
